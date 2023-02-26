@@ -1,4 +1,4 @@
-baseURL = "https://pedrotorreao.github.io"
+baseURL = "https://pedrotorreao.github.io/"
 languageCode = "en-us"
 title = "torras"
 theme = "archie"
@@ -22,7 +22,7 @@ paginate=3 # articles per page
 [[params.social]]
 name = "GitHub"
 icon = "github"
-url = "https://github.com/pedrotorreao"
+url = "https://github.com/pedrotorreao/"
 
 [[params.social]]
 name = "Twitter"

@@ -1,5 +1,5 @@
 ---
-title: 'Firstpost'
+title: 'First Post'
 date: 2023-02-12T18:05:48-03:00
 draft: false
 author: 'torras'
