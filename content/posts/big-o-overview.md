@@ -37,28 +37,7 @@ function getMax(a, b) {
 }
 ```
 
-2. Linear - `O(n)`:
-
-If the total number of operations that an algorithm performs is directly proportional to the size of the input, it is said to have a linear runtime because, in the worst case scenario, the maximum number of operations will be equal to the input size.
-
-Suppose we're searching for a `target` element in an array of size `n` using a simple linear search. The algorithm checks each array element and compares it to `target` to see if there is a match. If there's a match, we return the position of `target` in the array. In the event that `target` is not present in the array, the algorithm will keep running until it gets to the end of the array. Since that, for the worst case, the number of times the algorithm will run is equal to the size of the input, `n`, it is said to have a linear runtime or `O(n)`.
-
-> Example - Linear search:
-
-```javascript
-function searchArray(array, target) {
-  let n = array.length;
-
-  for (let i = 0; i < n; ++i) {
-    if (array[i] === target) {
-      return i;
-    }
-  }
-  return -1;
-}
-```
-
-3. Logarithmic - `O(log n)`:
+2. Logarithmic - `O(log n)`:
 
 If an algorithm has a time complexity of `O(log n)`, the bigger its input size, the smaller proportion of the actual input your program has to go through. A logarithmic algorithm is the opposite of an exponential one. When something grows exponentially, it means that, at each step, the number of operations is multiplied by a factor. Whereas, when an algorithm grows logarithmically, the number of operations needed is being divided by this factor at each step. Assuming the base of the logarithm as being `2`, this means that the size of the dataset that the algorithm has to go through gets divided by `2` at each step.
 
@@ -139,6 +118,27 @@ or simply, log(50000000) = ~25
 ```
 
 25 steps at worst, which is a huge improvement over the linear search. We can see that the growth rate of the runtime for both algorithms is very different, while linear search follows the size of the dataset, binary search gets faster in proportion as the size of the dataset grows.
+
+3. Linear - `O(n)`:
+
+If the total number of operations that an algorithm performs is directly proportional to the size of the input, it is said to have a linear runtime because, in the worst case scenario, the maximum number of operations will be equal to the input size.
+
+Suppose we're searching for a `target` element in an array of size `n` using a simple linear search. The algorithm checks each array element and compares it to `target` to see if there is a match. If there's a match, we return the position of `target` in the array. In the event that `target` is not present in the array, the algorithm will keep running until it gets to the end of the array. Since that, for the worst case, the number of times the algorithm will run is equal to the size of the input, `n`, it is said to have a linear runtime or `O(n)`.
+
+> Example - Linear search:
+
+```javascript
+function searchArray(array, target) {
+  let n = array.length;
+
+  for (let i = 0; i < n; ++i) {
+    if (array[i] === target) {
+      return i;
+    }
+  }
+  return -1;
+}
+```
 
 4. Quadratic - `O(n^2)`:
 
